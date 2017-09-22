@@ -173,8 +173,8 @@ describe('pets restfulExpressServer', () => {
         .expect('Content-type', /json/)
         .expect(200, {
           age: 3,
-          kind: 'duck',
-          name: 'Bob'
+          kind: 'owl',
+          name: 'Hugo'
         }, (err, _res) => {
           if (err) {
             return done(err);
@@ -186,8 +186,8 @@ describe('pets restfulExpressServer', () => {
             .expect('Content-Type', /json/)
             .expect(200, {
               age: 3,
-              kind: 'duck',
-              name: 'Bob'
+              kind: 'owl',
+              name: 'Hugo'
             }, done);
         });
     });
